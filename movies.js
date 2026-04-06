@@ -1027,7 +1027,7 @@ const MOVIES_DATA = {
         "logan": 4.5
       },
       "dateWatched": "2024-12-11",
-      "poster": "flow-2024.jpg",
+      "poster": "flow-2024-1.jpg",
       "genres": [
         "animation"
       ],
