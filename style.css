@@ -413,6 +413,10 @@ header h1 {
     min-width: 0;
   }
 
+  #year-select {
+    max-width: 85px;
+  }
+
   .up-next-content {
     padding: 12px 14px;
     gap: 14px;
