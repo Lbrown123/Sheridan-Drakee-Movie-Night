@@ -3367,19 +3367,19 @@ const MOVIES_DATA = {
       "description": "A highly intelligent chimpanzee named Caesar has been living a peaceful suburban life ever since he was born. But when he gets taken to a cruel primate facility, Caesar decides to revolt against those who have harmed him."
     },
     {
-      "title": "Pride and Prejudice",
+      "title": "Pride and Prejudice (2005)",
       "ratings": {
         "abby": 4,
         "elizabeth": 4,
         "logan": 3
       },
       "dateWatched": "2022-04-12",
-      "poster": "pride-and-prejudice.jpg",
+      "poster": "pride-and-prejudice-2005.jpg",
       "genres": [
         "drama",
         "romance"
       ],
-      "description": "In early 19th century England, Mr and Mrs Bennet's five unmarried daughters vie for the affections of rich and eligible Mr Bingley and his status-conscious friend, Mr Darcy, who have moved into their neighbourhood. While Bingley takes an immediate liking to eldest daughter Jane, Darcy has difficulty adapting to local society and repeatedly clashes with second-eldest Elizabeth."
+      "description": "A story of love and life among the landed English gentry during the Georgian era. Mr. Bennet is a gentleman living in Hertfordshire with his overbearing wife and five daughters, but if he dies their house will be inherited by a distant cousin whom they have never met, so the family's future happiness and security is dependent on the daughters making good marriages."
     },
     {
       "title": "Adaptation",

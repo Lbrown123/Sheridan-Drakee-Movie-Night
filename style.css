@@ -4,7 +4,7 @@
   --bg-card: #0f3460;
   --bg-controls: #1a1a2e;
   --text-primary: #e8e8e8;
-  --text-secondary: #a0a0b8;
+  --text-secondary: #b8b8d0;
   --accent: #e2b616;
   --accent-dim: #6b5a1e;
   --up-next-bg: #1b2a4a;
@@ -24,7 +24,6 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   min-height: 100vh;
-  padding-bottom: 40px;
 }
 
 header {
@@ -356,6 +355,21 @@ header h1 {
   color: var(--accent);
   font-weight: 700;
   font-size: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  max-width: 640px;
+  margin: 48px auto 0;
+  padding: 24px 20px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.6;
 }
 
 /* No results */
