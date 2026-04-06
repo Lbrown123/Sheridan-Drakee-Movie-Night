@@ -1,0 +1,61 @@
+Movie,Date Watched,Location,Abby's Rating,Elizabeth's Rating,Logan's Rating,Total Score,Bechdel Test?
+A Complete Unknown,1/11/25,Filmscene,3.5,3.5,3.5,3.5,N
+Y tu mama tambien,1/13/25,Home,3.5,3.5,3,3.333333333,Y
+The Colors Within,1/29,Filmscene,3.5,3.5,3.5,3.5,Y
+Bring It On,2/12,Home,3.5,3.5,3.5,3.5,Y
+Funny Girl ,2/16,Home,4,4,3.5,3.833333333,Y
+Paddington in Peru,2/23,Filmscene,3.5,3.5,4,3.666666667,Y
+Heaven Can Wait,2/27,Filmscene,3.5,4,4.5,4,N
+Weathering With You,4/1,Filmscene,4,4,5,4.333333333,Y
+Kneecap,4/3,Home,3.5,4,4,3.833333333,N
+Close Encounters of the Third Kind,4/15,Home,3.5,3.5,3.5,3.5,N
+Schindlers List,4/24,Home,4,5,5,4.666666667,Y
+On Swift Horses,5/8,Filmscene,4.5,3.5,4,4,Y
+Your Name,5/12,Home,4,4,4.5,4.166666667,Y
+Wedding Banquet,5/14,Filmscene,4,4,4,4,Y
+Mission Impossible The Final Reckoning ,5/27,Filmscene,3.5,4,4.5,4,N
+Spirit,5/29,Home,3.5,3,3,3.166666667,N
+High School Musical 3,5/30,Home,4.5,4,3.5,4,Y
+Jane Austen Wrecked My Life,6/5,Filmscene,3.5,3.5,4,3.666666667,Y
+Prince of Egypt,6/9,Home,3.5,4,3.5,3.666666667,N
+West Side Story,6/10,Home,4,4,3.5,3.833333333,Y
+The Materialists,6/13,Filmscene,3.5,4,4,3.833333333,Y
+Dial M For Murder,6/26,Home,4,4.5,4.5,4.333333333,N
+Sideways,7/2,Home,3,2,3.5,2.833333333,N
+Battle of the Sexes,7/5,Home,3.5,3,3.5,3.333333333,Y
+American Graffiti,7/7,Filmscene,3,4,4.5,3.833333333,N
+The Sisterhood of the Traveling Pants,7/12,Filmscene in the Park,3.5,4,4,3.833333333,Y
+Jurassic World Rebirth,7/13,Coral Ridge Marcus,4.5,3.5,3.5,3.833333333,N
+AI: Artificial Intelligence,7/23,Home,4,3.5,4,3.833333333,N
+Zombies 4,7/22,Home,4,2.5,2,2.833333333,Y
+Fantastic Four: First Steps,7/24,Coral Ridge Marcus,3.5,4,4,3.833333333,N
+Romancing the Stone,7/30,Home,3.5,3.5,3.5,3.5,Y
+The Zone of Interest,8/13,Home ,3.5,3.5,4,3.666666667,Y
+Brokeback Mountain,8/19,Filmscene,4,4.5,4.5,4.333333333,N
+Kung Fu Panda,8/21,Home,4,4,4,4,N
+Rear Window,8/25,Home,4,4,4.5,4.166666667,N
+Bells are Ringing,9/5,Home,3.5,3.5,3.5,3.5,Y
+Splitsville,9/8,Filmscene,3.5,3.5,3.5,3.5,Y
+Becoming Jane,9/18,Home,3.5,3.5,3,3.333333333,N
+The History of Sound,9/20,Filmscene,4,4,4,4,N
+Michael Clayton,9/25,Home,3.5,3.5,3.5,3.5,N
+Death Becomes Her,9/27,Abby,4,3.5,3.5,3.666666667,Y
+Mulholland Drive,10/1,Home,3.5,3.5,4,3.666666667,Y
+When Harry Met Sally,10/13,Home,4,4.5,4,4.166666667,Y
+A Knight's Tale,10/20,Home,3.5,3.5,3.5,3.5,N
+The Mastermind,11/2,Filmscene,3,3,3.5,3.166666667,N
+Tron,11/5,Home,3,2.5,3,2.833333333,N
+Now You See Me Now You Don't ,11/19,Coral Ridge Marcus,4.5,3.5,3,3.666666667,Y
+Wicked: For Good,11/21,Filmscene,4.5,4,4,4.166666667,Y
+Zootopia 2,11/26,Waterloo Marcus,4,3.5,3.5,3.666666667,Y
+True Grit,12/4,Home,3.5,4,4,3.833333333,N
+Only You (1994),12/9,Home,4,4,4,4,Y
+Two of a Kind,12/12,Abby's,3,2,3,2.666666667,N
+Wake Up Dead Man,12/16,Home,3.5,4,3.5,3.666666667,Y
+The Abyss,12/18,Home,4,4,4,4,Y
+,,,,,,,
+,,,,,,,
+,,,,,,,0
+,,,,,,,
+,,,,,,,
+,,,,,,3.716049383,

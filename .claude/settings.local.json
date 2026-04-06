@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Bash(python scripts/import_ratings.py)",
+      "Bash(python3 scripts/import_ratings.py)",
+      "Bash(python3 -c \":*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 scripts/fetch_posters.py --dry-run)",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_posters.py --all \"The Thing\" \"The Princess Bride\" \"Only You \\(1994\\)\" \"Oklahoma! \\(1999\\)\" \"Peter Pan \\(2003\\)\" \"Mean Girls \\(2024\\)\" \"The Color Purple \\(2023\\)\" \"Footloose \\(1984\\)\" \"Hairspray \\(2007\\)\" \"Wuthering Heights \\(2011\\)\" \"Past Lives\" \"The Materialists\")",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 -c \":*)",
+      "Bash(curl -s \"https://image.tmdb.org/t/p/w500/cMwLTcG5aVBYeh5W6SVSfowboAf.jpg\" -o \"/Users/logandrake/Documents/Claude Code Projects/Movie Night/posters/debs-2004.jpg\")",
+      "Bash(python scripts/import_txt_ratings.py --dry-run)",
+      "Bash(python3 scripts/import_txt_ratings.py --dry-run)",
+      "Bash(python3 scripts/import_txt_ratings.py)",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python scripts/fetch_metadata.py --dry-run)",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_posters.py)",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_metadata.py --dry-run)",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_metadata.py)",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_posters.py \"Mission: Impossible - Fallout\" \"Planet of the Apes \\(1968\\)\" \"Raiders of the Lost Ark\" \"Ever After \\(1998\\)\" \"Teen Spirit \\(2018\\)\")",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python scripts/fetch_posters.py \"Pretty Woman \\(1990\\)\" \"The Adventures of Tintin \\(2011\\)\")",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_posters.py \"Pretty Woman \\(1990\\)\" \"The Adventures of Tintin \\(2011\\)\")",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_metadata.py \"Pretty Woman \\(1990\\)\" \"The Adventures of Tintin \\(2011\\)\")",
+      "Bash(python3 scripts/fetch_metadata.py \"Pride and Prejudice\")",
+      "Bash(printenv TMDB_API_KEY)",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_metadata.py \"Pride and Prejudice\")",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_metadata.py \"Pride and Prejudice \\(2005\\)\")",
+      "Bash(TMDB_API_KEY=01b484e8801c9121aa50f6462f4329eb python3 scripts/fetch_posters.py \"Pride and Prejudice \\(2005\\)\")"
+    ]
+  }
+}

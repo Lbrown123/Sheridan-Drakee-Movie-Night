@@ -1,0 +1,61 @@
+Movie,Date Watched,Location,Abby's Rating,Elizabeth's Rating,Logan's Rating,Total Score,Bechdel Test?,E,HvA
+The Prestige,1/2/24,Logan & Elizabeth's,3.5,4,5,4.166666667,N,,1
+The Color Purple (2023),1/3/24,Filmscene,4,4,4.5,4.166666667,Y,1,0
+Mean Girls (2024),1/15,Sycamore Marcus,3.5,3.5,4,3.666666667,Y,1,0
+All of Us Strangers,1/21,Filmscene,3.5,3.5,3.5,3.5,N,,0
+Ocean's Eleven,1/23,Logan & Elizabeth's,3,3,3.5,3.166666667,N,,1
+Eyes Wide Shut,1/29,Logan & Elizabeth's,2,2.5,3,2.5,N,,1
+"Planes, Trains, and Automobiles",,Logan & Elizabeth's,2,3,3.5,2.833333333,N,,1
+Thelma & Louise,2/21,Logan & Elizabeth's,4,4.5,4,4.166666667,Y,1,1
+Little Shop of Horrors,2/24,Logan & Elizabeth's ,3.5,3.5,3.5,3.5,N,,1
+About Time,2/29,Logan & Elizabeth's,3.5,3.5,4.5,3.833333333,Y,1,1
+Past Lives ,3/5,Logan & Elizabeth's,3.5,3.5,3.5,3.5,N,,1
+TMNT Mutant Mayhem,3/7,Logan & Elizabeth's,3.5,4,4,3.833333333,N,,1
+Meet the Parents,3/22,Logan & Elizabeth's,3.5,3.5,4,3.666666667,N,,1
+Breakfast at Tiffany's,3/27,Logan & Elizabeth's,3.5,3.5,3.5,3.5,N,,1
+Flower,4/2,Abby's,3,3,3,3,Y,1,1
+Wicked Little Letters,4/9,Filmscene,3.5,4,4,3.833333333,Y,1,0
+Peter Pan (2003),4/11,Logan & Elizabeth's,3.5,3.5,3,3.333333333,N,,1
+Girls Just Want to Have Fun,4/16,Abby's,4.5,3.5,3.5,3.833333333,Y,1,1
+Blazing Saddles ,4/19,Logan & Elizabeth's,3.5,2.5,3.5,3.166666667,N,,1
+Stick It,4/24,Logan & Elizabeth's,3.5,4,4,3.833333333,Y,1,1
+Challengers,4/25,Coral Ridge Marcus,4,3.5,4.5,4,Y,1,0
+Pirates of the Caribbean,5/14,Logan & Elizabeth's,4,4,4,4,N,,1
+The Fall Guy,5/20,Filmscene,4,4.5,4,4.166666667,Y,1,0
+Jesus Christ Superstar,6/3,Logan & Elizabeth's,3.5,3,4,3.5,N,,1
+Spirited Away,6/13,Logan & Elizabeth's,3.5,4,4.5,4,Y,1,1
+Inside Out 2,6/15,Drive-in Theater,3,3.5,3.5,3.333333333,Y,1,0
+You Hurt My Feelings,6/25,Logan & Elizabeth's,3.5,3.5,3.5,3.5,Y,1,1
+Phantom of the Opera,7/1,Logan & Elizabeth's,4,4,3.5,3.833333333,Y,1,1
+The Martian,7/27,New house!,3.5,3.5,3.5,3.5,N,,1
+Slumdog Millionaire,8/3,New house,4,3.5,3.5,3.666666667,N,,1
+The 39 Steps,8/4,Filmscene,4,3.5,4,3.833333333,N,,0
+Citizen Kane,8/11,New house ,3.5,3.5,3.5,3.5,N,,1
+Shadow of a Doubt,8/13,Filmscene,3.5,3.5,4.5,3.833333333,Y,1,0
+Notorious,8/14,Filmscene,4,4,3.5,3.833333333,N,,0
+To Catch a Thief ,8/21,Filmscene,3.5,3,3.5,3.333333333,N,,0
+Independence Day,8/25,New house ,3,3,3,3,Y,1,1
+Vertigo,8/27,Filmscene,4,4,4,4,N,,0
+Marnie,8/29,Filmscene,3,3.5,3.5,3.333333333,Y,1,0
+8 Mile,9/5,New house,3.5,3,3,3.166666667,N,,1
+Music Man ,9/10,New house ,3,3.5,4,3.5,Y,1,1
+Robocop,9/23,New house,2.5,3,3.5,3,N,,1
+Jaws ,9/26,New house ,4,4,4,4,N,,1
+The Wild Robot,9/28,Filmscene,4,4.5,5,4.5,Y,1,0
+A League of their Own,10/14,New house,4,3.5,3.5,3.666666667,Y,1,1
+John Tucker Must Die,10/18,New House,3,3.5,3.5,3.333333333,Y,1,1
+Halloween ,10/19,New house ,3,3,3,3,Y,1,1
+27 Dresses,10/24,New house,3.5,3,3,3.166666667,Y,1,1
+We Live in Time,10/29,Ped mall Filmscene ,4,4.5,4,4.166666667,Y,1,0
+DEBS,10/30,New house ,3.5,3.5,3.5,3.5,Y,1,1
+Game Night,11/9,New House,4,3,4.5,3.833333333,N,,1
+Anora,11/16,Filmscene,4,4,4,4,Y,1,0
+Interstellar,11/20,New house,3.5,4,4.5,4,N,,1
+Wicked,11/21,Filmscene,5,4.5,4.5,4.666666667,Y,1,0
+Oklahoma! (1999),12/4,New house ,3,3.5,2,2.833333333,Y,1,1
+Nimona,12/6,New house,4,4,4,4,Y,1,1
+Flow,12/11,Filmscene,3.5,3.5,4.5,3.833333333,NA,,0
+Muppet Christmas Carol,12/14,New house,3.5,3.5,4,3.666666667,N,,1
+Spin Me Round,12/29,New house ,3.5,3,3,3.166666667,Y,1,1
+,,,,,,,,,
+,,,,,,3.623563218,,30,
