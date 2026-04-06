@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Night</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sheridan-Drake Movie Night</h1>
+    <p class="tagline">Logan, Elizabeth & Abby's movie ratings</p>
+  </header>
+
+  <section id="up-next" class="up-next" hidden>
+    <div class="up-next-content">
+      <div class="up-next-poster">
+        <img id="up-next-img" src="" alt="">
+        <div id="up-next-placeholder" class="poster-placeholder" hidden>
+          <span id="up-next-placeholder-title"></span>
+        </div>
+      </div>
+      <div class="up-next-info">
+        <span class="up-next-badge">Up Next</span>
+        <h2 id="up-next-title"></h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="controls">
+    <div class="controls-left">
+      <button id="reset-btn" class="reset-btn" hidden>Reset</button>
+      <input type="search" id="search-input" placeholder="Search movies…" autocomplete="off">
+      <div id="search-filter-hint" hidden></div>
+      <span class="filter-label">Filter by:</span>
+      <div class="control-group">
+        <label for="year-select">Year</label>
+        <select id="year-select">
+          <option value="any">Any Year</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="genre-select">Genre</label>
+        <select id="genre-select">
+          <option value="any">All Genres</option>
+          <option value="action/adventure">Action / Adventure</option>
+          <option value="animation">Animation</option>
+          <option value="comedy">Comedy</option>
+          <option value="documentary">Documentary</option>
+          <option value="drama">Drama</option>
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+          <option value="scifi/fantasy">Sci-Fi / Fantasy</option>
+          <option value="thriller">Thriller</option>
+        </select>
+      </div>
+    </div>
+    <div class="controls-right">
+      <div class="control-group">
+        <label for="sort-select">Sort by</label>
+        <select id="sort-select">
+          <option value="date-desc">Date (Newest First)</option>
+          <option value="date-asc">Date (Oldest First)</option>
+          <option value="rating-logan">Logan's Rating</option>
+          <option value="rating-elizabeth">Elizabeth's Rating</option>
+          <option value="rating-abby">Abby's Rating</option>
+          <option value="rating-average">Average Rating</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="movie-count" class="movie-count"></div>
+
+  <main id="movie-grid" class="movie-grid"></main>
+
+  <div id="no-results" class="no-results" hidden>
+    <p>No movies found for this filter.</p>
+  </div>
+
+  <script src="movies.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
