@@ -41,6 +41,26 @@ If someone missed a movie night, their rating shows as N/A and they're excluded 
 
 All rating sorts show the best-rated films first. Ties are broken by most recently watched.
 
+## Caching
+
+The site uses a service worker (`sw.js`) to cache assets in your browser, so repeat visits don't re-download the 21 MB of poster images every time. GitHub Pages only caches files for 10 minutes by default — the service worker overrides this in the browser.
+
+**How it works:**
+- **Posters** are cached permanently the first time you load them. Every visit after that serves them instantly with no network request. As you scroll through the page, newly visible posters get added to the cache.
+- **`movies.js`** (the data file) is served from cache immediately, while a fresh copy is fetched in the background. This means a newly added movie will show up on your *second* page load after the update is pushed — not the first. This is intentional and keeps the site feeling fast.
+- **`index.html`, `script.js`, `style.css`** work the same way as `movies.js`.
+
+**Things to know when making updates:**
+
+| Action | What happens |
+|---|---|
+| Add a new movie to `movies.js` | Appears after two page loads (stale-while-revalidate) |
+| Add a new poster image | Downloaded and cached on first page load that shows it |
+| **Replace a poster with the same filename** | **Won't update for anyone who already has it cached** — rename the file and update `movies.js` instead |
+| Force everyone to re-fetch all non-poster assets | Bump `CACHE_VERSION` in `sw.js` (e.g. `'v1'` → `'v2'`) and push |
+
+The poster cache (`posters-cache`) is never cleared automatically, even when `CACHE_VERSION` is bumped — posters are assumed to be permanent once uploaded. If you need to clear it manually, open DevTools → Application → Cache Storage → right-click `posters-cache` → Delete.
+
 ## Tech
 
-Plain HTML, CSS, and JavaScript. No frameworks, no build tools. Hosted on GitHub Pages.
+Plain HTML, CSS, and JavaScript. No frameworks, no build tools. Hosted on GitHub Pages. Service worker handles browser-side caching.

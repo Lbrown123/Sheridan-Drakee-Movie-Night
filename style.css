@@ -367,7 +367,11 @@ header h1 {
 }
 
 /* Responsive */
+.mobile-break { display: none; }
+
 @media (max-width: 600px) {
+  .mobile-break { display: inline; }
+
   header h1 {
     font-size: 1.7rem;
   }

@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Sheridan-Drake Movie Night</h1>
+    <h1>Sheridan-Drake<br class="mobile-break"> Movie Night</h1>
     <p class="tagline">Logan, Elizabeth & Abby's movie ratings</p>
   </header>
 
@@ -80,5 +80,10 @@
 
   <script src="movies.js"></script>
   <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
 </body>
 </html>
