@@ -212,7 +212,7 @@ header h1 {
   flex: 0 0 100%;
   order: 99;
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: #e07070;
   font-style: italic;
   line-height: 1.4;
 }

@@ -745,19 +745,20 @@ const MOVIES_DATA = {
       "description": "As seniors in high school, Troy and Gabriella struggle with the idea of being separated from one another as college approaches. Along with the rest of the Wildcats, they stage a spring musical to address their experiences, hopes and fears about their future."
     },
     {
-      "title": "Spirit",
+      "title": "Spirit: Stallion of the Cimarron (2002)",
       "ratings": {
         "abby": 3.5,
         "elizabeth": 3.0,
         "logan": 3.0
       },
       "dateWatched": "2025-05-29",
-      "poster": "spirit.jpg",
+      "poster": "spirit-stallion-of-the-cimarron-2002.jpg",
       "genres": [
+        "action/adventure",
         "animation",
-        "scifi/fantasy"
+        "drama"
       ],
-      "description": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family."
+      "description": "A captured mustang remains determined to return to his herd no matter what."
     },
     {
       "title": "Mission Impossible The Final Reckoning",
@@ -884,20 +885,21 @@ const MOVIES_DATA = {
       "description": "The summer of his high school freshman year, Hodaka runs away from his remote island home to Tokyo, and quickly finds himself pushed to his financial and personal limits. The weather is unusually gloomy and rainy every day, as if taking its cue from his life. After many days of solitude, he finally finds work as a freelance writer for a mysterious occult magazine. Then, one day, Hodaka meets Hina on a busy street corner. This bright and strong-willed girl possesses a strange and wonderful ability: the power to stop the rain and clear the sky."
     },
     {
-      "title": "Heaven Can Wait",
+      "title": "Heaven Can Wait (1943)",
       "ratings": {
         "abby": 3.5,
         "elizabeth": 4.0,
         "logan": 4.5
       },
       "dateWatched": "2025-02-27",
-      "poster": "heaven-can-wait.jpg",
+      "poster": "heaven-can-wait-1943.jpg",
       "genres": [
         "comedy",
+        "drama",
         "romance",
         "scifi/fantasy"
       ],
-      "description": "Joe Pendleton is a quarterback preparing to lead his team to the superbowl when he is almost killed in an accident. An overanxious angel plucks him to heaven only to discover that he wasn't ready to die, and that his body has been cremated. A new body must be found, and that of a recently-murdered millionaire is chosen. His wife and accountant—the murderers—are confused by this development, as he buys the L.A. Rams in order to once again quarterback them into the Superbowl."
+      "description": "Spoiled playboy Henry van Cleve dies and arrives at the entrance to Hell, a final destination he is sure he deserves after living a life of profligacy. The devil, however, isn't so sure Henry meets Hell's standards. Convinced he is where he belongs, Henry recounts his life's deeds, both good and bad, including an act of indiscretion during his 25-year marriage to his wife, Martha, with the hope that \"His Excellency\" will arrive at the proper judgment."
     },
     {
       "title": "Paddington in Peru",
@@ -1330,14 +1332,14 @@ const MOVIES_DATA = {
       "description": "A retired San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her."
     },
     {
-      "title": "Independence Day",
+      "title": "Independence Day (1996)",
       "ratings": {
         "abby": 3.0,
         "elizabeth": 3.0,
         "logan": 3.0
       },
       "dateWatched": "2024-08-25",
-      "poster": "independence-day.jpg",
+      "poster": "independence-day-1996.jpg",
       "genres": [
         "action/adventure",
         "scifi/fantasy"
@@ -1389,14 +1391,14 @@ const MOVIES_DATA = {
       "description": "In sleepy Santa Rosa, restless young Charlie’s world brightens when her sophisticated Uncle Charlie arrives for a long visit. But as his behavior grows increasingly strange, she begins to suspect that her beloved uncle may be hiding a terrible secret—and that danger has quietly entered her home."
     },
     {
-      "title": "Citizen Kane",
+      "title": "Citizen Kane (1941)",
       "ratings": {
         "abby": 3.5,
         "elizabeth": 3.5,
         "logan": 3.5
       },
       "dateWatched": "2024-08-11",
-      "poster": "citizen-kane.jpg",
+      "poster": "citizen-kane-1941.jpg",
       "genres": [
         "drama",
         "thriller"

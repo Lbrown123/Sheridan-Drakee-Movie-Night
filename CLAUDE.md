@@ -73,7 +73,3 @@ Caching strategies by asset type:
 To force all visitors to re-fetch non-poster assets: bump `CACHE_VERSION` in `sw.js` (e.g. `'v1'` → `'v2'`). This clears `assets-v1` but never touches `posters-cache`.
 
 If a poster file was replaced with the same filename, users with it cached won't see the new image — rename the file and update `movies.js` instead.
-
-## Deployment
-
-Push to `main`. GitHub Pages: Settings → Pages → Deploy from branch → `main` → `/` root.
