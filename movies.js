@@ -1,9 +1,24 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "It Happened One Night (1934)",
-    "poster": "happened-one-night.webp"
+    "title": "Aftersun (2022)",
+    "poster": "aftersun.webp"
   },
   "movies": [
+    {
+      "title": "It Happened One Night (1934)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 4,
+        "logan": 3.5
+      },
+      "dateWatched": "2026-04-08",
+      "poster": "happened-one-night.webp",
+      "genres": [
+        "romance",
+        "animation",
+      ],
+      "description": "A runaway heiress makes a deal with the rogue reporter trailing her but the mismatched pair end up stuck with each other when their bus leaves them behind."
+    },
     {
       "title": "The Super Mario Galaxy Movie",
       "ratings": {
