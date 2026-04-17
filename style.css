@@ -530,6 +530,35 @@ header h1:hover .title-star {
   text-transform: uppercase;
 }
 
+/* Invisible sentinel to detect when controls reach the top */
+#controls-sentinel {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* The element that fills the notch area */
+.notch-fill {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top);
+  background: var(--bg-controls); 
+  z-index: 10000; /* Ensures it sits above your ::before/::after noise and vignette */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* Class triggered by JavaScript */
+.notch-fill.visible {
+  opacity: 1;
+}
+
+
 /* Responsive */
 .mobile-break { display: none; }
 
