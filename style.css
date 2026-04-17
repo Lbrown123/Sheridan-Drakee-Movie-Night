@@ -184,14 +184,17 @@ header h1:hover .title-star {
 /* Controls */
 .controls {
   position: sticky;
-  top: env(safe-area-inset-top);
+  top: 0; /* Anchor to the absolute top of the screen */
   z-index: 10;
   background: var(--bg-controls);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 10px 16px;
-  padding: 14px 20px;
+  
+  /* Add safe-area-inset-top to the existing 14px top padding */
+  padding: calc(14px + env(safe-area-inset-top)) 20px 14px; 
+  
   border-top: 1px solid var(--rule-color);
   border-bottom: 1px solid var(--rule-color);
   backdrop-filter: blur(4px);
