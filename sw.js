@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v7';
+const CACHE_VERSION = 'v8';
 const ASSETS_CACHE = `assets-${CACHE_VERSION}`;
 const POSTERS_CACHE = 'posters-cache';
 
