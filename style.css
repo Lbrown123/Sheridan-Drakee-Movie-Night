@@ -31,12 +31,9 @@ body {
   min-height: 100vh;
 }
 
-/* Safe-area fill — covers iPhone notch/Dynamic Island with the controls color.
-   position:fixed is viewport-relative regardless of scroll position, so this
-   reliably paints the gap between the screen top and the sticky controls bar.
-   Height is 0 on desktop (env() returns 0 without viewport-fit=cover). */
-html::before {
-  content: '';
+/* Safe-area fill — covers iPhone notch/Dynamic Island with the controls color. */
+
+.safe-area-fill {
   position: fixed;
   top: 0;
   left: 0;
