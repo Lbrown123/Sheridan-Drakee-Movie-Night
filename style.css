@@ -198,6 +198,17 @@ header h1:hover .title-star {
   -webkit-backdrop-filter: blur(4px);
 }
 
+/* Fill the iPhone notch/safe area with the controls background color */
+.controls::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * env(safe-area-inset-top));
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top);
+  background: var(--bg-controls);
+}
+
 .controls-left {
   display: flex;
   flex-wrap: wrap;
