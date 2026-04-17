@@ -538,7 +538,7 @@ header h1:hover .title-star {
   width: 100%;
   /* Must be at least 6px tall for Safari to recognize it as the theme color */
   height: max(6px, env(safe-area-inset-top));
-  background-color: var(--bg-controls);
+  background-color: var(--bg-primary);
   z-index: 10000;
   pointer-events: none;
 }
