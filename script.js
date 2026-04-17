@@ -304,26 +304,3 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const sentinel = document.getElementById('controls-sentinel');
-  const notchFill = document.getElementById('notch-fill');
-
-  if (sentinel && notchFill) {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      
-      // If the sentinel's top is less than 0, it has scrolled out of view at the top,
-      // which means the .controls bar immediately below it is now stuck.
-      if (entry.boundingClientRect.top < 0 && !entry.isIntersecting) {
-        notchFill.classList.add('visible');
-      } else {
-        notchFill.classList.remove('visible');
-      }
-    }, {
-      rootMargin: '0px',
-      threshold: 0
-    });
-
-    observer.observe(sentinel);
-  }
-});
