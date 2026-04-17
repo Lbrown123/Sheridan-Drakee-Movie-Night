@@ -31,6 +31,22 @@ body {
   min-height: 100vh;
 }
 
+/* Safe-area fill — covers iPhone notch/Dynamic Island with the controls color.
+   position:fixed is viewport-relative regardless of scroll position, so this
+   reliably paints the gap between the screen top and the sticky controls bar.
+   Height is 0 on desktop (env() returns 0 without viewport-fit=cover). */
+html::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top);
+  background: var(--bg-controls);
+  z-index: 10000;
+  pointer-events: none;
+}
+
 /* Film grain — fixed SVG noise tile, barely visible, adds tactile depth */
 body::before {
   content: '';
@@ -198,16 +214,6 @@ header h1:hover .title-star {
   -webkit-backdrop-filter: blur(4px);
 }
 
-/* Fill the iPhone notch/safe area with the controls background color */
-.controls::before {
-  content: '';
-  position: absolute;
-  top: calc(-1 * env(safe-area-inset-top));
-  left: 0;
-  right: 0;
-  height: env(safe-area-inset-top);
-  background: var(--bg-controls);
-}
 
 .controls-left {
   display: flex;
