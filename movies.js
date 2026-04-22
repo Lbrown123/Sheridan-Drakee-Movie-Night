@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Aftersun (2022)",
-    "poster": "aftersun.webp"
+    "title": "Mystery Road (2013)",
+    "poster": "mystery-road.jpg"
   },
   "movies": [
+    {
+      "title": "Aftersun (2022)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-04-21",
+      "poster": "aftersun.webp",
+      "genres": [
+        "drama",
+      ],
+      },
     {
       "title": "It Happened One Night (1934)",
       "ratings": {
