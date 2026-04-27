@@ -5,6 +5,19 @@ const MOVIES_DATA = {
   },
   "movies": [
     {
+      "title": "FernGully (1992)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 3
+      },
+      "dateWatched": "2026-04-26",
+      "poster": "ferngully.jpg",
+      "genres": [
+        "animation",
+      ],
+      },
+    {
       "title": "Aftersun (2022)",
       "ratings": {
         "abby": 4,
