@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Mystery Road (2013)",
-    "poster": "mystery-road.jpg"
+    "title": "The Godfather (1972)",
+    "poster": "godfather.jpg"
   },
   "movies": [
+    {
+      "title": "Mystery Road (2013)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3,
+        "logan": 4
+      },
+      "dateWatched": "2026-04-29",
+      "poster": "mystery-road.jpg",
+      "genres": [
+        "drama",
+      ],
+      },
     {
       "title": "FernGully (1992)",
       "ratings": {
