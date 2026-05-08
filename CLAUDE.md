@@ -67,9 +67,9 @@ Theme via `:root` custom properties: `--bg-primary`, `--bg-card`, `--accent` (go
 
 Caching strategies by asset type:
 - **Posters** (`/posters/*`): cache-first, stored in `posters-cache` forever — **poster filenames are immutable**; same filename must always mean the same image
-- **`movies.js`, `script.js`, `style.css`**: stale-while-revalidate via `assets-v1` — cached version served immediately, update fetched in background for next visit
-- **`index.html`**: network-first with cache fallback
+- **`index.html`, `movies.js`**: network-first with cache fallback — always fetched fresh when online, so data and page-shell updates appear immediately on the next visit. Falls back to `assets-vN` cache if offline.
+- **`script.js`, `style.css`**: stale-while-revalidate via `assets-vN` — cached version served immediately, update fetched in background for next visit. Bump `CACHE_VERSION` to force fresh fetch.
 
-To force all visitors to re-fetch non-poster assets: bump `CACHE_VERSION` in `sw.js` (e.g. `'v1'` → `'v2'`). This clears `assets-v1` but never touches `posters-cache`.
+To force all visitors to re-fetch non-poster `script.js`/`style.css`: bump `CACHE_VERSION` in `sw.js` (e.g. `'v1'` → `'v2'`). This clears `assets-vN` but never touches `posters-cache`. Note: a version bump only takes effect on the *second* visit after deploy, because the old SW is still active during the first. Editing `movies.js` does **not** require a version bump — it's network-first.
 
 If a poster file was replaced with the same filename, users with it cached won't see the new image — rename the file and update `movies.js` instead.

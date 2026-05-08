@@ -41,7 +41,11 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  if (url.pathname === '/' || url.pathname === '/index.html') {
+  if (
+    url.pathname === '/' ||
+    url.pathname === '/index.html' ||
+    url.pathname === '/movies.js'
+  ) {
     event.respondWith(handleNetworkFirst(request));
     return;
   }

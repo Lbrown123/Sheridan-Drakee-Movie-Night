@@ -47,17 +47,19 @@ The site uses a service worker (`sw.js`) to cache assets in your browser, so rep
 
 **How it works:**
 - **Posters** are cached permanently the first time you load them. Every visit after that serves them instantly with no network request. As you scroll through the page, newly visible posters get added to the cache.
-- **`movies.js`** (the data file) is served from cache immediately, while a fresh copy is fetched in the background. This means a newly added movie will show up on your *second* page load after the update is pushed — not the first. This is intentional and keeps the site feeling fast.
-- **`index.html`, `script.js`, `style.css`** work the same way as `movies.js`.
+- **`index.html` and `movies.js`** are network-first: they're fetched fresh from the server on every visit when you're online, so any update to the movie list or "up next" appears immediately on the next visit. The cached copy is only used as a fallback if the network is unavailable.
+- **`script.js` and `style.css`** use stale-while-revalidate: the cached version is served immediately and a fresh copy is fetched in the background for the next visit. Updates to these files appear on the *second* page load after deploy.
 
 **Things to know when making updates:**
 
 | Action | What happens |
 |---|---|
-| Add a new movie to `movies.js` | Appears after two page loads (stale-while-revalidate) |
+| Add or edit a movie in `movies.js` | Appears on the next visit — no extra steps needed |
+| Update `upNext` in `movies.js` | Appears on the next visit — no extra steps needed |
 | Add a new poster image | Downloaded and cached on first page load that shows it |
 | **Replace a poster with the same filename** | **Won't update for anyone who already has it cached** — rename the file and update `movies.js` instead |
-| Force everyone to re-fetch all non-poster assets | Bump `CACHE_VERSION` in `sw.js` (e.g. `'v1'` → `'v2'`) and push |
+| Edit `script.js` or `style.css` | Appears on the *second* visit. Bump `CACHE_VERSION` in `sw.js` if you want the change to land sooner for repeat visitors (still takes two visits, but at least the second one is guaranteed fresh) |
+| Edit `sw.js` itself | Bump `CACHE_VERSION` so the new service worker installs cleanly |
 
 The poster cache (`posters-cache`) is never cleared automatically, even when `CACHE_VERSION` is bumped — posters are assumed to be permanent once uploaded. If you need to clear it manually, open DevTools → Application → Cache Storage → right-click `posters-cache` → Delete.
 
