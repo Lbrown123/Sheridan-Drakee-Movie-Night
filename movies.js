@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "The Godfather (1972)",
-    "poster": "godfather.jpg"
+    "title": "A Streetcar Named Desire (1951)",
+    "poster": "streetcar.webp"
   },
   "movies": [
+     {
+      "title": "The Godfather (1972)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 4,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-05-07",
+      "poster": "godfather.jpg",
+      "genres": [
+        "drama",
+      ],
+      },
     {
       "title": "Mystery Road (2013)",
       "ratings": {
