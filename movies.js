@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "A Streetcar Named Desire (1951)",
-    "poster": "streetcar.webp"
+    "title": "All the President's Men (1976)",
+    "poster": "presidents_men.jpeg"
   },
   "movies": [
+     {
+      "title": "A Streetcar Named Desire (1951)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 3.5
+      },
+      "dateWatched": "2026-05-13",
+      "poster": "streetcar.webp",
+      "genres": [
+        "drama",
+      ],
+      },
      {
       "title": "The Godfather (1972)",
       "ratings": {
