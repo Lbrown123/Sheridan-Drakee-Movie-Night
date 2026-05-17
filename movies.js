@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "All the President's Men (1976)",
-    "poster": "presidents_men.jpeg"
+    "title": "12 Angry Men (1957)",
+    "poster": "12_angry_men.webp"
   },
   "movies": [
+      {
+      "title": "All the President's Men (1976)",
+      "ratings": {
+        "abby": 3,
+        "elizabeth": 3.5,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-05-16",
+      "poster": "presidents_men.jpeg",
+      "genres": [
+        "drama",
+      ],
+      },
      {
       "title": "A Streetcar Named Desire (1951)",
       "ratings": {
