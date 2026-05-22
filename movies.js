@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "12 Angry Men (1957)",
-    "poster": "12_angry_men.webp"
+    "title": "Paris, Texas (1984)",
+    "poster": "paris_texas.webp"
   },
   "movies": [
+      {
+      "title": "12 Angry Men (1957)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-05-21",
+      "poster": "12_angry_men.webp",
+      "genres": [
+        "drama",
+      ],
+      },
       {
       "title": "All the President's Men (1976)",
       "ratings": {
