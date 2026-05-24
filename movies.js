@@ -4,6 +4,21 @@ const MOVIES_DATA = {
     "poster": "paris_texas.webp"
   },
   "movies": [
+       {
+      "title": "The Princess Bride (1987)",
+      "ratings": {
+        "abby": 5,
+        "elizabeth": 4.5,
+        "logan": 4
+      },
+      "dateWatched": "2026-05-23",
+      "poster": "princess_bride.jpeg",
+      "genres": [
+        "drama",
+        "scifi/fantasy",
+        "comedy",
+      ],
+      },
       {
       "title": "12 Angry Men (1957)",
       "ratings": {
