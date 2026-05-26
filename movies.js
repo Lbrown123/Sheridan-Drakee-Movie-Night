@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Paris, Texas (1984)",
-    "poster": "paris_texas.webp"
+    "title": "Eternity (2025)",
+    "poster": "eternity.jpg"
   },
   "movies": [
+      {
+      "title": "Paris, Texas (1984)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3.5,
+        "logan": 4
+      },
+      "dateWatched": "2026-05-25",
+      "poster": "paris_texas.webp",
+      "genres": [
+        "drama",
+      ],
+    },
        {
       "title": "The Princess Bride (1987)",
       "ratings": {
