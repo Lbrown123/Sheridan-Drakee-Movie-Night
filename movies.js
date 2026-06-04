@@ -1,9 +1,24 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Eternity (2025)",
-    "poster": "eternity.jpg"
+    "title": "Shaun of the Dead (2004)",
+    "poster": "shaun.webp"
   },
   "movies": [
+      {
+      "title": "Eternity (2025)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 4,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-05603",
+      "poster": "eternity.jpg",
+      "genres": [
+        "drama",
+        "romance",
+        "comedy"
+      ],
+    },
       {
       "title": "Paris, Texas (1984)",
       "ratings": {
