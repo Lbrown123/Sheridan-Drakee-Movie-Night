@@ -4,6 +4,20 @@ const MOVIES_DATA = {
     "poster": "shaun.webp"
   },
   "movies": [
+     {
+      "title": "I Wish You All the Best (2024)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 3.5,
+        "logan": 4
+      },
+      "dateWatched": "2026-06-10",
+      "poster": "wish_you_the_best.jpg",
+      "genres": [
+        "drama",
+        "romance",
+      ],
+    },
       {
       "title": "Eternity (2025)",
       "ratings": {
@@ -11,7 +25,7 @@ const MOVIES_DATA = {
         "elizabeth": 4,
         "logan": 4.5
       },
-      "dateWatched": "2026-05603",
+      "dateWatched": "2026-06-03",
       "poster": "eternity.jpg",
       "genres": [
         "drama",
