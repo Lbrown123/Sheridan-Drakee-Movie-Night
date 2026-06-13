@@ -5,6 +5,21 @@ const MOVIES_DATA = {
   },
   "movies": [
      {
+      "title": "Disclosure Day (2026)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3.5,
+        "logan": 4
+      },
+      "dateWatched": "2026-06-11",
+      "poster": "disclosure_day.webp",
+      "genres": [
+        "drama",
+        "action",
+        "scifi"
+      ],
+    },
+     {
       "title": "I Wish You All the Best (2024)",
       "ratings": {
         "abby": 4,
