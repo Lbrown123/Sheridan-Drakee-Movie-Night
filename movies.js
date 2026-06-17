@@ -5,6 +5,19 @@ const MOVIES_DATA = {
   },
   "movies": [
      {
+      "title": "Stop! That! Train! (2026)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3.5,
+        "logan": 3.5
+      },
+      "dateWatched": "2026-06-16",
+      "poster": "train.jpeg",
+      "genres": [
+        "comedy",
+      ],
+    },
+     {
       "title": "Disclosure Day (2026)",
       "ratings": {
         "abby": 3.5,
