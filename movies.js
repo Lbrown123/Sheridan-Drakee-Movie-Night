@@ -5,6 +5,19 @@ const MOVIES_DATA = {
   },
   "movies": [
      {
+      "title": "Failsafe(1964)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 4,
+        "logan": 5
+      },
+      "dateWatched": "2026-07-6",
+      "poster": "failsafe.jpg",
+      "genres": [
+        "drama",
+      ],
+    },
+     {
       "title": "Stop! That! Train! (2026)",
       "ratings": {
         "abby": 3.5,
