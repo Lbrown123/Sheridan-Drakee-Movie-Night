@@ -1,11 +1,25 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Shaun of the Dead (2004)",
-    "poster": "shaun.webp"
+    "title": "Forgetting Sarah Marshall (2008)",
+    "poster": "sarah.webp"
   },
   "movies": [
+    {
+      "title": "Shaun of the Dead (2004)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-07-8",
+      "poster": "shaun.webp",
+      "genres": [
+        "comedy",
+        "action"
+      ],
+    },
      {
-      "title": "Failsafe(1964)",
+      "title": "Failsafe (1964)",
       "ratings": {
         "abby": 3.5,
         "elizabeth": 4,
