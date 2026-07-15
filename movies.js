@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Forgetting Sarah Marshall (2008)",
-    "poster": "sarah.webp"
+    "title": "Sabrina (1954)",
+    "poster": "sabrina.jpg"
   },
   "movies": [
+     {
+      "title": "Forgetting Sarah Marshall (2008)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3,
+        "logan": 3
+      },
+      "dateWatched": "2026-07-13",
+      "poster": "sarah.webp",
+      "genres": [
+        "comedy",
+      ],
+    },
     {
       "title": "Shaun of the Dead (2004)",
       "ratings": {
@@ -11,7 +24,7 @@ const MOVIES_DATA = {
         "elizabeth": 4,
         "logan": 4
       },
-      "dateWatched": "2026-07-8",
+      "dateWatched": "2026-07-08",
       "poster": "shaun.webp",
       "genres": [
         "comedy",
@@ -25,7 +38,7 @@ const MOVIES_DATA = {
         "elizabeth": 4,
         "logan": 5
       },
-      "dateWatched": "2026-07-6",
+      "dateWatched": "2026-07-06",
       "poster": "failsafe.jpg",
       "genres": [
         "drama",
