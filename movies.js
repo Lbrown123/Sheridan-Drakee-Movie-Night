@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Sabrina (1954)",
-    "poster": "sabrina.jpg"
+    "title": "Heathers (1988)",
+    "poster": "heathers.jpeg"
   },
   "movies": [
+      {
+      "title": "Sabrina (1954)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3.5,
+        "logan": 3.5
+      },
+      "dateWatched": "2026-07-15",
+      "poster": "sabrina.jpg",
+      "genres": [
+        "drama",
+      ],
+    },
      {
       "title": "Forgetting Sarah Marshall (2008)",
       "ratings": {
