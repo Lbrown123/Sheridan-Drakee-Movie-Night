@@ -4,6 +4,33 @@ const MOVIES_DATA = {
     "poster": "heathers.jpeg"
   },
   "movies": [
+    {
+      "title": "Heartstopper Forever (2026)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 3.5,
+        "logan": 3
+      },
+      "dateWatched": "2026-07-19",
+      "poster": "heartstopper.avif",
+      "genres": [
+        "romance",
+      ],
+    },
+     {
+      "title": "The Odyssey (2026)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 3.5,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-07-18",
+      "poster": "odyssey.jpg",
+      "genres": [
+        "drama",
+        "fantasy"
+      ],
+    },
       {
       "title": "Sabrina (1954)",
       "ratings": {
