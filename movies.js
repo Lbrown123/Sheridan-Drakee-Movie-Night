@@ -4,6 +4,48 @@ const MOVIES_DATA = {
     "poster": "heathers.jpeg"
   },
   "movies": [
+     {
+      "title": "Spider Man: Brand New Day (2026)",
+      "ratings": {
+        "abby": 4.5,
+        "elizabeth": 4.5,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-07-30",
+      "poster": "brandnewday.webp",
+      "genres": [
+        "action",
+        "drama"
+      ],
+    },
+     {
+      "title": "Punch Drunk Love (2002)",
+      "ratings": {
+        "abby": 3,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-07-27",
+      "poster": "punchdrunk.jpeg",
+      "genres": [
+        "romance",
+        "comedy",
+        "drama"
+      ],
+    },
+     {
+      "title": "Night of the Comet (1984)",
+      "ratings": {
+        "abby": 3,
+        "elizabeth": 3,
+        "logan": 4
+      },
+      "dateWatched": "2026-07-20",
+      "poster": "comet.webp",
+      "genres": [
+        "drama",
+      ],
+    },
     {
       "title": "Heartstopper Forever (2026)",
       "ratings": {
