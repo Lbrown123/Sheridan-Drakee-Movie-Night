@@ -5,6 +5,34 @@ const MOVIES_DATA = {
   },
   "movies": [
      {
+      "title": "The Prince and the Showgirl (1957)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 3.5,
+        "logan": 4
+      },
+      "dateWatched": "2026-08-12",
+      "poster": "showgirl.webp",
+      "genres": [
+        "romance",
+        "comedy"
+      ],
+    },
+     {
+      "title": "Argo (2012)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 4,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-08-10",
+      "poster": "argo.webp",
+      "genres": [
+        "action",
+        "drama"
+      ],
+    },
+     {
       "title": "Spider Man: Brand New Day (2026)",
       "ratings": {
         "abby": 4.5,
