@@ -71,7 +71,7 @@ async function handlePoster(request) {
 
 async function handleNetworkFirst(request) {
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: 'no-store' });
     if (response.ok) {
       const cache = await caches.open(ASSETS_CACHE);
       cache.put(request, response.clone());
