@@ -1,9 +1,22 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Heathers (1988)",
-    "poster": "heathers.jpeg"
+    "title": "Gone Girl (2014)",
+    "poster": "gonegirl.webp"
   },
   "movies": [
+     {
+      "title": "Heathers (1988)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 3.5
+      },
+      "dateWatched": "2026-08-18",
+      "poster": "heathers.jpeg",
+      "genres": [
+        "comedy"
+      ],
+    },
      {
       "title": "The Prince and the Showgirl (1957)",
       "ratings": {
