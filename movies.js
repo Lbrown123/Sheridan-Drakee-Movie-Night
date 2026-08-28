@@ -1,9 +1,49 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Gone Girl (2014)",
-    "poster": "gonegirl.webp"
+    "title": "Romey and Michelle's High School Reunion (1997)",
+    "poster": "romy.jpg"
   },
   "movies": [
+      {
+      "title": "The Misfits (1961)",
+      "ratings": {
+        "abby": 2.5,
+        "elizabeth": 2.5,
+        "logan": 3
+      },
+      "dateWatched": "2026-08-27",
+      "poster": "misfits.jpg",
+      "genres": [
+        "drama"
+      ],
+    },
+     {
+      "title": "Gone Girl (2014)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3.5,
+        "logan": 4
+      },
+      "dateWatched": "2026-08-24",
+      "poster": "gonegirl.webp",
+      "genres": [
+        "drama",
+        "mystery"
+      ],
+    },
+         {
+      "title": "The Seven Year Itch (1955)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-08-19",
+      "poster": "itch.jpg",
+      "genres": [
+        "comedy"
+      ],
+    },
      {
       "title": "Heathers (1988)",
       "ratings": {
