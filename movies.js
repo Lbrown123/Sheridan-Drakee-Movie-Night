@@ -5,6 +5,20 @@ const MOVIES_DATA = {
   },
   "movies": [
       {
+      "title": "Coyote vs. Acme (2026)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-08-29",
+      "poster": "coyote.jpg",
+      "genres": [
+        "comedy",
+        "animation"
+      ],
+    },
+      {
       "title": "The Misfits (1961)",
       "ratings": {
         "abby": 2.5,
@@ -394,7 +408,6 @@ const MOVIES_DATA = {
       "poster": "happened-one-night.webp",
       "genres": [
         "romance",
-        "animation",
       ],
       "description": "A runaway heiress makes a deal with the rogue reporter trailing her but the mismatched pair end up stuck with each other when their bus leaves them behind."
     },
