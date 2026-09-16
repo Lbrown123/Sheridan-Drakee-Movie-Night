@@ -1,9 +1,37 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Romey and Michelle's High School Reunion (1997)",
-    "poster": "romy.jpg"
+    "title": "Sweet Home Alabama (2002)",
+    "poster": "alabama.webp"
   },
   "movies": [
+      {
+      "title": "The Lord of the Rings: The Fellowship of the Ring (2001)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-09-14",
+      "poster": "fellowship.webp",
+      "genres": [
+        "action/adventure",
+        "drama",
+        "scifi/fantasy"
+      ],
+    },
+      {
+      "title": "Romy and Michele's High School Reunion (1997)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 3.5,
+        "logan": 3.5
+      },
+      "dateWatched": "2026-08-31",
+      "poster": "romy.jpg",
+      "genres": [
+        "comedy"
+      ],
+    },
       {
       "title": "Coyote vs. Acme (2026)",
       "ratings": {
