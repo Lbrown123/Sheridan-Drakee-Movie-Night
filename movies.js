@@ -1,9 +1,37 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Sweet Home Alabama (2002)",
-    "poster": "alabama.webp"
+    "title": "Carol (2015)",
+    "poster": "carol.jpeg"
   },
   "movies": [
+      {
+      "title": "The Fast and the Furious (2001)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 3.5,
+        "logan": 3.5
+      },
+      "dateWatched": "2026-10-05",
+      "poster": "fastfurious.webp",
+      "genres": [
+        "action/adventure",
+        "thriller"
+      ],
+    },
+      {
+      "title": "Sweet Home Alabama (2002)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 3.5,
+        "logan": 3
+      },
+      "dateWatched": "2026-09-30",
+      "poster": "alabama.webp",
+      "genres": [
+        "comedy",
+        "romance"
+      ],
+    },
       {
       "title": "The Lord of the Rings: The Fellowship of the Ring (2001)",
       "ratings": {
