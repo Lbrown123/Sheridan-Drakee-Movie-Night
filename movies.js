@@ -1,9 +1,23 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Carol (2015)",
-    "poster": "carol.jpeg"
+    "title": "Cast Away (2000)",
+    "poster": "castaway.webp"
   },
   "movies": [
+      {
+      "title": "Carol (2015)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-10-12",
+      "poster": "carol.jpeg",
+      "genres": [
+        "drama",
+        "romance"
+      ],
+    },
       {
       "title": "The Fast and the Furious (2001)",
       "ratings": {
