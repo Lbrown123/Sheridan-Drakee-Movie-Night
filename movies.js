@@ -12,7 +12,7 @@ const MOVIES_DATA = {
         "logan": 4
       },
       "dateWatched": "2026-10-26",
-      "poster": "the-sixth-sense.jpg",
+      "poster": "the-sixth-sense.jpeg",
       "genres": [
         "drama",
         "horror",
