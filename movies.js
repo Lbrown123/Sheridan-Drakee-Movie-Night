@@ -5,6 +5,21 @@ const MOVIES_DATA = {
   },
   "movies": [
       {
+      "title": "The Sixth Sense (1999)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-10-26",
+      "poster": "the-sixth-sense.jpg",
+      "genres": [
+        "drama",
+        "horror",
+        "thriller"
+      ],
+    },
+      {
       "title": "Carol (2015)",
       "ratings": {
         "abby": 4,
