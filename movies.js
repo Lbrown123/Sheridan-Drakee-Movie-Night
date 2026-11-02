@@ -5,6 +5,21 @@ const MOVIES_DATA = {
   },
   "movies": [
       {
+      "title": "Wildwood (2026)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 4,
+        "logan": 4
+      },
+      "dateWatched": "2026-11-01",
+      "poster": "wildwood.webp",
+      "genres": [
+        "animation",
+        "action/adventure",
+        "scifi/fantasy"
+      ],
+    },
+      {
       "title": "Carol (2015)",
       "ratings": {
         "abby": 4,
