@@ -1,9 +1,23 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Cast Away (2000)",
-    "poster": "castaway.webp"
+    "title": "Tetris (2023)",
+    "poster": "tetris.webp"
   },
   "movies": [
+      {
+      "title": "Cast Away (2000)",
+      "ratings": {
+        "abby": 4,
+        "elizabeth": 3.5,
+        "logan": 4
+      },
+      "dateWatched": "2026-11-03",
+      "poster": "castaway.webp",
+      "genres": [
+        "drama",
+        "action/adventure"
+      ],
+    },
       {
       "title": "Wildwood (2026)",
       "ratings": {
