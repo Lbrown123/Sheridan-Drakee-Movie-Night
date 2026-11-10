@@ -1,9 +1,23 @@
 const MOVIES_DATA = {
   "upNext": {
-    "title": "Tetris (2023)",
-    "poster": "tetris.webp"
+    "title": "Batman Begins (2005)",
+    "poster": "batman-begins.jpg"
   },
   "movies": [
+      {
+      "title": "Tetris (2023)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 4,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-11-10",
+      "poster": "tetris.webp",
+      "genres": [
+        "drama",
+        "thriller"
+      ],
+    },
       {
       "title": "Cast Away (2000)",
       "ratings": {
