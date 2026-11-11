@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v19';
+const CACHE_VERSION = 'v20';
 const ASSETS_CACHE = `assets-${CACHE_VERSION}`;
 const POSTERS_CACHE = 'posters-cache';
 
@@ -8,6 +8,7 @@ const PRECACHE_ASSETS = [
   '/style.css',
   '/script.js',
   '/movies.js',
+  '/holiday.js',
 ];
 
 self.addEventListener('install', event => {

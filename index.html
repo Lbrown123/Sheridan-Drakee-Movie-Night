@@ -4,18 +4,41 @@
   <script defer src="https://stats.netsmart.digital/script.js" data-website-id="807ea094-79bf-4538-8f38-276d5046555d"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#3a1d0b">
+  <meta name="theme-color" content="#0b1712">
   <title>Sheridan-Drake Movie Night</title>
+  <meta name="description" content="Logan, Elizabeth, and Abby's movie night ratings.">
+  <!-- Social share card. og-image.jpg is rendered from scripts/og-image.html;
+       re-render it whenever the header/theme design changes (see CLAUDE.md). -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sheridandrakemovienight.com/">
+  <meta property="og:title" content="Sheridan-Drake Movie Night">
+  <meta property="og:description" content="Logan, Elizabeth, and Abby's movie night ratings.">
+  <meta property="og:image" content="https://sheridandrakemovienight.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sheridan-Drake Movie Night, in cream script under a string of holiday lights with falling snow">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Mr+Dafoe&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="notch-fill" class="notch-fill"></div>
-    <header><h1><span class="title-stars-mobile" aria-hidden="true">★&ensp;★&ensp;★&ensp;★&ensp;★</span><span class="title-star" aria-hidden="true">★</span>Sheridan-Drake<br class="mobile-break"> Movie Night<span class="title-star" aria-hidden="true">★</span></h1>
-    <p class="tagline">Logan, Elizabeth, and Abby's Ratings</p>
+    <canvas id="snow" class="snow" aria-hidden="true"></canvas>
+  <header class="holiday-header">
+    <div class="lights" id="lights" aria-hidden="true"></div>
+    <div class="header-inner">
+      <h1 class="title">
+        <span class="title-family">Sheridan-Drake</span>
+        <span class="title-main">Movie Night</span>
+      </h1>
+      <div class="holly-rule" aria-hidden="true">
+        <svg viewBox="0 0 64 28" width="64" height="28"><path d="M32 16c-6-1-10-6-18-5 3 2 1 5 4 6-3 1-2 4-6 5 8 2 13-2 20-6zM32 16c6-1 10-6 18-5-3 2-1 5-4 6 3 1 2 4 6 5-8 2-13-2-20-6z" fill="#2f7a4b"/><circle cx="29" cy="15" r="3.4" fill="#d43a3a"/><circle cx="35" cy="15" r="3.4" fill="#d43a3a"/><circle cx="32" cy="10.5" r="3.4" fill="#e04848"/></svg>
+      </div>
+      <p class="tagline">Logan, Elizabeth, and Abby's Ratings</p>
+    </div>
   </header>
 
   <section id="up-next" class="up-next" hidden>
@@ -93,6 +116,7 @@
 
   <script src="movies.js"></script>
   <script src="script.js"></script>
+  <script src="holiday.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');

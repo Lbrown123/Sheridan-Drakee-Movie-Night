@@ -1,16 +1,21 @@
 :root {
-  --bg-primary:     #111010;
-  --bg-secondary:   #1c1a18;
-  --bg-card:        #1e1c19;
-  --bg-controls:    #3a1d0b;
-  --up-next-bg:     #1a1713;
-  --up-next-border: #c9622a;
-  --text-primary:   #f0ead6;
-  --text-secondary: #9e9484;
-  --accent:         #d4702a;
-  --accent-dim:     #5a3214;
-  --accent-hover:   #e8884a;
-  --rule-color:     rgba(240, 234, 214, 0.07);
+  /* Holiday palette — evergreen night, cranberry, candlelight gold */
+  --bg-primary:     #0b1712;
+  --bg-secondary:   #12241b;
+  --bg-card:        #13261d;
+  --bg-card-top:    #173024;
+  --bg-controls:    rgba(98, 18, 26, 0.94);
+  --up-next-bg:     rgba(19, 38, 29, 0.92);
+  --up-next-border: #c8323a;
+  --text-primary:   #f6f1e4;
+  --text-secondary: #a3b3a6;
+  --text-controls:  #f1d9d4;
+  --accent:         #e6b84f;
+  --accent-dim:     #3a4a33;
+  --accent-hover:   #f5d27e;
+  --berry:          #d43a3a;
+  --pine:           #2f7a4b;
+  --rule-color:     rgba(246, 241, 228, 0.08);
   --font-display:   'Playfair Display', Georgia, serif;
   --font-ui:        'Barlow Condensed', 'Arial Narrow', sans-serif;
   --radius: 8px;
@@ -23,9 +28,17 @@
   box-sizing: border-box;
 }
 
+html {
+  background:
+    radial-gradient(ellipse 120% 60% at 50% 0%, #163a2a 0%, transparent 60%),
+    linear-gradient(180deg, #0d1d16 0%, var(--bg-primary) 45%, #07100c 100%);
+  background-color: var(--bg-primary);
+  background-attachment: fixed;
+}
+
 body {
   font-family: var(--font-ui);
-  background: var(--bg-primary);
+  background: transparent;
   color: var(--text-primary);
   letter-spacing: 0.02em;
   min-height: 100vh;
@@ -51,72 +64,165 @@ body::after {
   inset: 0;
   z-index: 9998;
   pointer-events: none;
-  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.45) 100%);
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Falling snow — canvas sits behind all content */
+.snow {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Header */
-header {
-  text-align: center;
-  padding: 52px 20px 28px;
+.holiday-header {
   position: relative;
+  text-align: center;
+  padding: 0 20px 34px;
+  overflow: hidden;
 }
 
-/* Amber rule beneath header */
-header::after {
+/* String of lights */
+.lights {
+  position: relative;
+  height: 74px;
+  margin: 0 -20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 10px 0;
+}
+
+.lights::before {
+  /* the wire: a gentle scalloped cord */
   content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -4px;
+  height: 30px;
+  background:
+    radial-gradient(ellipse 50% 100% at 50% 0%, transparent 92%, #24382c 93%, #24382c 100%, transparent 101%)
+    0 0 / 88px 30px repeat-x;
+  opacity: 0.9;
+}
+
+.bulb {
+  position: relative;
+  width: 11px;
+  height: 18px;
+  margin-top: var(--drop, 12px);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: var(--c);
+  box-shadow: 0 0 6px 1px var(--c), 0 0 18px 4px var(--glow);
+  animation: twinkle var(--dur, 2.4s) ease-in-out var(--delay, 0s) infinite alternate;
+}
+
+.bulb::before {
+  /* socket */
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 7px;
+  height: 6px;
+  transform: translateX(-50%);
+  background: #1f2e25;
+  border-radius: 2px 2px 1px 1px;
+}
+
+.bulb.red   { --c: #ff4d4d; --glow: rgba(255, 77, 77, 0.45); }
+.bulb.green { --c: #4fe08a; --glow: rgba(79, 224, 138, 0.4); }
+.bulb.gold  { --c: #ffd166; --glow: rgba(255, 209, 102, 0.5); }
+.bulb.white { --c: #f4f7ff; --glow: rgba(200, 220, 255, 0.45); }
+
+@keyframes twinkle {
+  0%, 35% { opacity: 1;    filter: brightness(1.1); }
+  100%    { opacity: 0.35; filter: brightness(0.6); box-shadow: 0 0 3px 0 var(--c); }
+}
+
+.header-inner {
+  position: relative;
+  padding-top: 26px;
+}
+
+/* ---- Title lockup ------------------------------------------------------ */
+
+.title {
+  font-weight: 400;
+  line-height: 1;
+}
+
+.title-family,
+.title-main {
   display: block;
-  width: 60px;
-  height: 2px;
-  background: var(--accent);
-  margin: 18px auto 0;
-  border-radius: 1px;
 }
 
-header h1 {
-  font-family: var(--font-display);
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 1.1;
-  color: var(--text-primary);
-}
-
-.title-star {
-  color: var(--accent);
-  font-size: 1.4rem;
+/* Vintage title card — 1950s holiday-film opening card.
+   Brush script in cream with a cranberry drop-shade, the family name
+   tucked in above the M like a studio credit. */
+.holiday-header .title {
   display: inline-block;
-  vertical-align: middle;
-  margin: 0 0.4em;
-  font-family: initial;
-  transition: color 0.25s ease;
+  text-align: left;
+  transform: rotate(-3deg);
+  margin-bottom: 6px;
 }
 
-.title-stars-mobile {
-  display: none;
+.holiday-header .title-family {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f0a9a2;
+  margin: 0 0 -0.35em 0.6em;
+  position: relative;
+  z-index: 1;
 }
 
-header h1:hover .title-star {
-  animation: star-spin 0.6s ease-in-out;
-  color: var(--accent-hover);
+.holiday-header .title-main {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: clamp(3.6rem, 11vw, 6rem);
+  color: #f7ecd2;
+  padding: 0 0.15em 0.05em 0;
+  text-shadow:
+    0 3px 0 #9b1c26,
+    0 4px 0 #6d1119,
+    0 10px 18px rgba(0, 0, 0, 0.55);
 }
 
-@keyframes star-spin {
-  0%   { transform: rotate(0deg)   scale(1); }
-  20%  { transform: rotate(-20deg) scale(1.35); }
-  40%  { transform: rotate(20deg)  scale(1.45); }
-  60%  { transform: rotate(-12deg) scale(1.3); }
-  80%  { transform: rotate(8deg)   scale(1.15); }
-  100% { transform: rotate(0deg)   scale(1); }
+.holly-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px auto 0;
 }
+
+.holly-rule::before,
+.holly-rule::after {
+  content: '';
+  width: 70px;
+  height: 1px;
+}
+.holly-rule::before { background: linear-gradient(90deg, transparent, var(--accent)); }
+.holly-rule::after  { background: linear-gradient(90deg, var(--accent), transparent); }
 
 .tagline {
   font-family: var(--font-ui);
   font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.16em;
+  font-size: 0.92rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  margin-top: 10px;
+  margin-top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bulb { animation: none; }
 }
 
 /* Up Next */
@@ -133,6 +239,9 @@ header h1:hover .title-star {
   background: var(--up-next-bg);
   border-left: 3px solid var(--up-next-border);
   border-radius: 0 var(--radius) var(--radius) 0;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   padding: 20px 24px;
 }
 
@@ -160,9 +269,9 @@ header h1:hover .title-star {
 
 .up-next-badge {
   display: inline-block;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  background: transparent;
+  color: #fff;
+  border: 1px solid var(--berry);
+  background: var(--berry);
   font-family: var(--font-ui);
   font-weight: 600;
   font-size: 0.7rem;
@@ -222,7 +331,7 @@ header h1:hover .title-star {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #c8c0ad;
+  color: var(--text-controls);
   white-space: nowrap;
 }
 
@@ -238,7 +347,7 @@ header h1:hover .title-star {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #c8c0ad;
+  color: var(--text-controls);
   white-space: nowrap;
 }
 
@@ -248,7 +357,7 @@ header h1:hover .title-star {
   -webkit-appearance: none;
   background: var(--bg-secondary);
   color: var(--text-primary);
-  border: 1px solid rgba(240, 234, 214, 0.1);
+  border: 1px solid rgba(246, 241, 228, 0.14);
   border-radius: 4px;
   padding: 7px 30px 7px 10px;
   font-family: var(--font-ui);
@@ -260,7 +369,7 @@ header h1:hover .title-star {
 }
 
 .control-group select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='%239e9484'%3E%3Cpath d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='%23a3b3a6'%3E%3Cpath d='M5 6L0 0h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 9px center;
 }
@@ -291,7 +400,7 @@ header h1:hover .title-star {
   order: 99;
   font-family: var(--font-ui);
   font-size: 0.78rem;
-  color: #d07060;
+  color: #ffc9bf;
   font-style: italic;
   line-height: 1.5;
 }
@@ -319,14 +428,14 @@ header h1:hover .title-star {
 
 .movie-count {
   max-width: 1200px;
-  margin: 10px auto 0;
+  margin: 14px auto 0;
   padding: 0 20px;
   font-family: var(--font-ui);
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #c8c0ad;
+  color: var(--text-secondary);
 }
 
 /* Movie Grid */
@@ -341,17 +450,18 @@ header h1:hover .title-star {
 
 /* Movie Card */
 .movie-card {
-  background: var(--bg-card);
+  background: linear-gradient(180deg, var(--bg-card-top) 0%, var(--bg-card) 100%);
   border-radius: var(--radius);
-  border: 1px solid rgba(240, 234, 214, 0.06);
+  border: 1px solid rgba(230, 184, 79, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
   overflow: hidden;
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
 .movie-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
-  border-color: rgba(212, 112, 42, 0.3);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(200, 50, 58, 0.35), 0 0 24px rgba(230, 184, 79, 0.12);
+  border-color: rgba(200, 50, 58, 0.55);
 }
 
 .movie-card .poster-wrapper {
@@ -385,7 +495,7 @@ header h1:hover .title-star {
   font-family: var(--font-display);
   font-size: 1rem;
   font-style: italic;
-  border: 1px dashed rgba(240, 234, 214, 0.08);
+  border: 1px dashed rgba(230, 184, 79, 0.18);
 }
 
 .movie-card .card-body {
@@ -446,6 +556,7 @@ header h1:hover .title-star {
 
 .star.filled {
   color: var(--accent);
+  text-shadow: 0 0 6px rgba(230, 184, 79, 0.35);
   font-size: 0.95rem;
 }
 
@@ -471,7 +582,7 @@ header h1:hover .title-star {
 .average-row {
   margin-top: 8px;
   padding-top: 8px;
-  border-top: 1px solid var(--rule-color);
+  border-top: 1px solid rgba(200, 50, 58, 0.35);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -544,32 +655,11 @@ header h1:hover .title-star {
 }
 
 /* Responsive */
-.mobile-break { display: none; }
-
 @media (max-width: 600px) {
-  .mobile-break { display: inline; }
 
-  header h1 {
-    font-size: 2rem;
-  }
+  .lights { height: 64px; }
 
-  .title-stars-mobile {
-    display: block;
-    color: var(--accent);
-    font-size: 1.3rem;
-    letter-spacing: 0.3em;
-    margin-bottom: 8px;
-    transition: color 0.2s;
-  }
-
-  header h1:hover .title-stars-mobile {
-    animation: star-spin 0.6s ease-in-out;
-    color: var(--accent-hover);
-  }
-
-  .title-star {
-    display: none;
-  }
+  .holiday-header .title-family { font-size: 0.95rem; }
 
   .controls {
     flex-direction: column;

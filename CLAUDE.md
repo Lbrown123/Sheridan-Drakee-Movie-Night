@@ -9,7 +9,9 @@ Static GitHub Pages site for Logan, Elizabeth, and Abby's movie night ratings. N
 - `script.js` — filtering, sorting, rendering (no dependencies)
 - `movies.js` — **all data; the only file needing regular edits**
 - `posters/` — poster images (JPG/WebP)
+- `og-image.jpg` — social share card (1200×630), rendered from `scripts/og-image.html`
 - `sw.js` — service worker; handles browser caching strategy
+- `holiday.js` — seasonal decorations (header string lights + falling-snow canvas). To retire the holiday theme: remove its `<script>` tag and the `#snow` canvas / `#lights` div in `index.html`, then restyle the header and `:root` palette in `style.css`
 
 ## Data (`movies.js`)
 
@@ -73,3 +75,14 @@ Caching strategies by asset type:
 To force all visitors to re-fetch non-poster `script.js`/`style.css`: bump `CACHE_VERSION` in `sw.js` (e.g. `'v1'` → `'v2'`). This clears `assets-vN` but never touches `posters-cache`. Note: a version bump only takes effect on the *second* visit after deploy, because the old SW is still active during the first. Editing `movies.js` does **not** require a version bump — it's network-first.
 
 If a poster file was replaced with the same filename, users with it cached won't see the new image — rename the file and update `movies.js` instead.
+
+## Social share image (`og-image.jpg`)
+
+**Whenever the site's design changes — especially the header, title, palette, or seasonal theme — re-render the social share image so link previews match the site.**
+
+- Source: `scripts/og-image.html`. It pulls in `style.css` and `holiday.js`, but its `<header>` markup is a copy of the one in `index.html` — update both if the header markup changes. Its inline `<style>` only resizes things for the 1200×630 card.
+- Render (with the local server from `.claude/launch.json` running on port 8080):
+  ```bash
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --force-device-scale-factor=2 --window-size=1200,630 --virtual-time-budget=6000 --screenshot=/tmp/og-2x.png http://localhost:8080/scripts/og-image.html && sips -z 630 1200 -s format jpeg -s formatOptions 88 /tmp/og-2x.png --out og-image.jpg
+  ```
+- Social platforms cache preview images by URL. After replacing the image, either give it a new filename (and update the `og:image` tag in `index.html`) or re-scrape the URL with each platform's debugger (e.g. Facebook Sharing Debugger).
