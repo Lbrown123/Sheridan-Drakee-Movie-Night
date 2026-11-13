@@ -5,6 +5,20 @@ const MOVIES_DATA = {
   },
   "movies": [
       {
+      "title": "Strangers on a Train (1951)",
+      "ratings": {
+        "abby": 3.5,
+        "elizabeth": 4,
+        "logan": 4.5
+      },
+      "dateWatched": "2026-11-12",
+      "poster": "strangers on a train .webp",
+      "genres": [
+        "drama",
+        "thriller"
+      ],
+    },
+      {
       "title": "Tetris (2023)",
       "ratings": {
         "abby": 3.5,
